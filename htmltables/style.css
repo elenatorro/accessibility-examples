@@ -1,0 +1,18 @@
+.column-select {
+ background-color: gray;
+}
+
+.column-name {
+ background-color: silver;
+}
+
+.column-surname {
+ background-color: purple;
+}
+
+th, td {
+ padding: 10px;
+ text-align: center;
+ font-family: 'Arial';
+ color: white;
+}
