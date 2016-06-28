@@ -1,18 +1,25 @@
 .column-select {
  background-color: gray;
+ width: 10%;
 }
 
 .column-name {
  background-color: silver;
+ width: 45%;
 }
 
 .column-surname {
  background-color: purple;
+ width: 45%;
+}
+
+.table {
+ width: 100%;
 }
 
 th, td {
+ color: white;
+ font-family: 'Arial';
  padding: 10px;
  text-align: center;
- font-family: 'Arial';
- color: white;
 }

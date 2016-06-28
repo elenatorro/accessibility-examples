@@ -3,12 +3,12 @@
 
 <head>
     <meta charset="utf-8">
-    <title>HTML 5 table</title>
+    <title>HTML 5 Accesible Table</title>
     <link rel="stylesheet" href="style.css" media="screen" title="stylesheet">
 </head>
 
 <body>
-    <table role="presentation">
+    <table class="table" role="presentation">
         <colgroup>
             <col class="column-select">
             <col class="column-name">
@@ -16,17 +16,24 @@
         </colgroup>
         <thead>
             <tr>
-                <th>Selected Row</th>
-                <th>Name</th>
-                <th>Surname</th>
+                <th scope="col">Selected Row</th>
+                <th scope="col">Name</th>
+                <th scope="col">Surname</th>
             </tr>
         </thead>
-        <tbody role="grid">
+        <tbody role="grid" aria-multiselectable="true">
             <tr role="row" id="row-1">
-                <td role="gridcell"><span aria-labelledby="row-1"><input type=
-"checkbox" aria-labelledby="row-1" aria-checked="false" name=
-"selected" value="1" id="check-1"></span></td>
+                <td role="gridcell" aria-selected="true">
+                    <input type="checkbox" aria-labelledby="row-1" aria-checked="true" name="selected-row-1" value="0" id="check-1" checked>
+                </td>
                 <td role="gridcell">Elena</td>
+                <td role="gridcell">Torro</td>
+            </tr>
+            <tr role="row" id="row-2">
+                <td role="gridcell" aria-selected="false">
+                  <input type="checkbox" aria-labelledby="row-2" aria-checked="false" name="selected-row-2" value="1" id="check-2">
+                </td>
+                <td role="gridcell">Alvaro</td>
                 <td role="gridcell">Torro</td>
             </tr>
         </tbody>
