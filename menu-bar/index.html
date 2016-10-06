@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>HTML 5 Accesible Menu Bar</title>
+    <link rel="stylesheet" href="style.css" media="screen" title="stylesheet">
+</head>
+
+<body>
+  <nav class="nav" aria-label="Main Menu">
+    <ul>
+      <li><a href="#home" class="nav-link">Home</a></li>
+      <li><a href="#about" class="nav-link">About Us</a></li>
+      <li><a id="our-work-submenu" class="nav-submenu" aria-haspopup="true" href="#our-work">Our Work</a>
+        <ul aria-expanded="false" aria-label="Our Work Submenu">
+          <li><a class="nav-sub-link" href="#graphic-design">Graphic Design</a></li>
+          <li><a class="nav-sub-link" href="#web-development">Web Development</a></li>
+          <li><a class="nav-sub-link" href="#visual-art">Visual Art</a></li>
+          <li><a class="nav-sub-link" href="#augmented-reality">Augmented Reality</a></li>
+        </ul>
+      </li>
+      <li><a class="nav-link" href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section id="home" class="page-section">
+    <h2>Home</h2>
+  </section>
+  <section id="about" class="page-section">
+    <h2>About</h2>
+  </section>
+  <section id="our-work" class="page-section">
+    <h2>Our Work</h2>
+  </section>
+  <section id="graphic-design" class="page-section">
+    <h2>Graphic Design</h2>
+  </section>
+  <section id="web-development" class="page-section">
+    <h2>Web Development</h2>
+  </section>
+  <section id="visual-art" class="page-section">
+    <h2>Visual Art</h2>
+  </section>
+  <section id="augmented-reality" class="page-section">
+    <h2>Augmented Reality</h2>
+  </section>
+  <section id="contact" class="page-section">
+    <h2>Contact</h2>
+  </section>
+  <script src="script.js" type="text/javascript"></script>
+</body>
+
+</html>
